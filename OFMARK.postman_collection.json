@@ -1,0 +1,578 @@
+{
+	"info": {
+		"_postman_id": "69d5b111-8e76-4209-964e-b734f4cd0120",
+		"name": "OFMARK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Contact List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44387/api/Contacts",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44387",
+					"path": [
+						"api",
+						"Contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Contact",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44387/api/Contacts/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44387",
+					"path": [
+						"api",
+						"Contacts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Contact With Information",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44387/api/Contacts/GetWithInformation/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44387",
+					"path": [
+						"api",
+						"Contacts",
+						"GetWithInformation",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Contact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"Test Name\",\r\n    \"Surname\":\"Test Surname\",\r\n    \"Company\":\"Test Company\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44387/api/Contacts/CreateContact",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44387",
+					"path": [
+						"api",
+						"Contacts",
+						"CreateContact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Contact",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\":3,\r\n    \"Name\":\"Test Name1\",\r\n    \"Surname\":\"Test Surname1\",\r\n    \"Company\":\"Test Company1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44387/api/Contacts/UpdateContact",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44387",
+					"path": [
+						"api",
+						"Contacts",
+						"UpdateContact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Contact",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\":3,\r\n    \"Name\":\"Test Name1\",\r\n    \"Surname\":\"Test Surname1\",\r\n    \"Company\":\"Test Company1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44387/api/Contacts/DeleteContact/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44387",
+					"path": [
+						"api",
+						"Contacts",
+						"DeleteContact",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Contact Email List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44387/api/Contacts/GetContactEmailList/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44387",
+					"path": [
+						"api",
+						"Contacts",
+						"GetContactEmailList",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Email",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44387/api/Contacts/GetEmail/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44387",
+					"path": [
+						"api",
+						"Contacts",
+						"GetEmail",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Email",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\":3,\r\n    \"Email\":\"Hakanmertcaglaya@hotmail.com\"    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44387/api/Contacts/CreateEmail/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44387",
+					"path": [
+						"api",
+						"Contacts",
+						"CreateEmail",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Email",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\":3,\r\n    \"Name\":\"Test Name1\",\r\n    \"Surname\":\"Test Surname1\",\r\n    \"Company\":\"Test Company1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44387/api/Contacts/UpdateContact",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44387",
+					"path": [
+						"api",
+						"Contacts",
+						"UpdateContact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Email",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\":3,\r\n    \"Name\":\"Test Name1\",\r\n    \"Surname\":\"Test Surname1\",\r\n    \"Company\":\"Test Company1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44387/api/Contacts/DeleteContact/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44387",
+					"path": [
+						"api",
+						"Contacts",
+						"DeleteContact",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetContactNumberList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44387/api/Contacts/GetContactNumberList/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44387",
+					"path": [
+						"api",
+						"Contacts",
+						"GetContactNumberList",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Phone Number",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44387/api/Contacts/GetPhoneNumber/13",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44387",
+					"path": [
+						"api",
+						"Contacts",
+						"GetPhoneNumber",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Phone Number",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Type\":\"GSM\",\r\n    \"Number\":\"05555593974\"    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44387/api/Contacts/CreatePhoneNumber/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44387",
+					"path": [
+						"api",
+						"Contacts",
+						"CreatePhoneNumber",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Phone Number",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UserId\":1,\r\n    \"Type\":\"GSM\",\r\n    \"Number\":\"05555593975\"    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44387/api/Contacts/UpdatePhoneNumber",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44387",
+					"path": [
+						"api",
+						"Contacts",
+						"UpdatePhoneNumber"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Phone Number",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\":3,\r\n    \"Name\":\"Test Name1\",\r\n    \"Surname\":\"Test Surname1\",\r\n    \"Company\":\"Test Company1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44387/api/Contacts/DeleteContact/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44387",
+					"path": [
+						"api",
+						"Contacts",
+						"DeleteContact",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateAddress",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\":3,\r\n    \"Email\":\"Hakanmertcaglaya@hotmail.com\"    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44387/api/Contacts/CreateEmail/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44387",
+					"path": [
+						"api",
+						"Contacts",
+						"CreateEmail",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateAddress",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UserId\":1,\r\n    \"Type\":\"GSM\",\r\n    \"Number\":\"05555593975\"    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44387/api/Contacts/UpdatePhoneNumber",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44387",
+					"path": [
+						"api",
+						"Contacts",
+						"UpdatePhoneNumber"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetContactAddressList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44387/api/Contacts/GetContactAddressList/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44387",
+					"path": [
+						"api",
+						"Contacts",
+						"GetContactAddressList",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAddress",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44387/api/Contacts/GetEmail/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44387",
+					"path": [
+						"api",
+						"Contacts",
+						"GetEmail",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Address",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44387/api/Contacts/DeleteAddress/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44387",
+					"path": [
+						"api",
+						"Contacts",
+						"DeleteAddress",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
